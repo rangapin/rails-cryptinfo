@@ -13,9 +13,4 @@ class HomeController < ApplicationController
     @prices_response = Net::HTTP.get(@prices_uri)
     @prices = JSON.parse(@prices_response)
   end
-
-  def prices
-
-  end
-
 end
